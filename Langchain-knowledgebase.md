@@ -16,6 +16,12 @@
 
 **TimeWeightedVectorStoreRetriever**: It decays older documents, needs to provide last_accessed at in meta data. Does not work with all vectordb. works with faiss though.
 
+## QA Chains
+
+**load_qa_chain**: Loads all documents, does not do a semantic search
+
+**RetrievalQA**: We can add a retriever which can do a lot type of semantic searches, cosine similarity, mmr
+
 ## Chain Types
 
 **Refine**:
@@ -23,3 +29,18 @@
 **Stuff**:
 
 **Map reduce**:
+
+## Semantic Search techniques
+
+**Similarity Search**
+
+- Euclidean
+- Cosine
+
+**MMR**:
+- https://medium.com/tech-that-works/maximal-marginal-relevance-to-rerank-results-in-unsupervised-keyphrase-extraction-22d95015c7c5
+- https://www.cs.cmu.edu/~jgc/publication/The_Use_MMR_Diversity_Based_LTMIR_1998.pdf
+
+## Text Splitters:
+https://python.langchain.com/docs/modules/data_connection/document_transformers/
+
